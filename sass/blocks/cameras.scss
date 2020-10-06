@@ -1,0 +1,54 @@
+.cameras-content{
+  @include flex-container;
+}
+.cameras{
+  border-bottom: 4px solid $secondColor;
+  flex-basis: $oneElem;
+}
+.cameras__video img{
+  display: block;
+  max-width: 100%;
+}
+.cameras__title{
+  @include flex-container;
+  padding: 15px 20px;
+  background: $mainColor;
+  color:$white;
+  text-transform: uppercase;
+}
+.cameras__type{
+  font-size: $fontSize-XXl;
+  font-weight: $fontWeightBold;
+  span{
+    font-style: italic;
+    font-weight: $fontWeightLow;
+  }
+}
+.cameras__nmb{
+  font-size: $fontSize-s;
+  font-weight: $fontWeightBold;
+}
+@media screen and (max-width: $minWidth) {
+  .cameras-content{
+    justify-content: space-around;
+  }
+
+  .cameras{
+    flex-basis: 45%;
+    margin-bottom: 15px;
+  }
+  .cameras__type{
+    font-size: $mainFontSize;
+    font-weight: $fontWeightBold;
+  }
+  .cameras__title{
+    padding: 10px 15px;
+  }
+}
+@media (max-width:$microWidth){
+  .cameras-content{
+    justify-content: center;
+    flex-direction: column;
+  }
+
+}

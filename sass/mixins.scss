@@ -1,0 +1,147 @@
+
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin min-max($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@mixin adaptive-video() {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+}
+
+//ЗАТЕМНЕНИЕ ФОНА ФОТО
+@mixin darkImage($dc:rgba(0, 0, 0, 0.3)) {
+  content: '';
+  z-index: 1;
+  background-color: $dc;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left:0;
+  top:0;
+}
+
+//ЦЕНТРИРОВАТЬ ИКОНКУ В БЛОКЕ
+@mixin iconCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+// КНОПКИ
+@mixin btn($bg: $purple, $bc: $purple, $fs: 16px, $lh: 20px, $ls: 0px, $br: 0px, $w: 170px, $clr: $white) {
+  width: $w;
+  color: $clr;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  background-color: $bg;
+  border-radius: $br;
+  border-color: $bc;
+  padding: 12px 18px;
+  display: block;
+  text-align: center;
+  margin: 25px 0;
+  text-decoration: none;
+  @content;
+  &:hover {
+    background-color: darken($bg, 15%);
+  }
+
+}
+
+//ЦЕНТРИРОВАТЬ ТЕКСТ РОВНО ПО ТЕКСТУ БЛОКА
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@mixin embed-proportional($size: 56.25%, $fit-type: cover) {
+  //1920 - 100%
+  //1080 - 56.25%
+  //1200 - 62.5%
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 0;
+  padding: 0 0 $size 0;
+  > *:first-child {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: $fit-type;
+  }
+}
+@mixin gymBtn($br:3px, $fs:14px, $cl:$white){
+  border:1px solid $white;
+  border-radius: $br;
+  font-size: $fs;
+  padding: 10px 25px;
+  color:$cl;
+  margin: 0 auto;
+  &:hover {
+    background-color: $white;
+    color: $mainColor;
+  }
+}
+@mixin footnote{
+  padding: 5px;
+  background-color: $white;
+  position: absolute;
+  z-index: 0;
+  transform: rotate(45deg);
+  top: -4px;
+  left: 15px;
+}

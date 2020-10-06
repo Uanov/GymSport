@@ -1,0 +1,10 @@
+//Вариант подключения шрифтов
+@font-face {
+   font-family: 'open-sans';
+   src: url('/fonts/opensans-regular-webfont.woff') format('woff2'),
+   url('/fonts/opensans-regular-webfont.woff2') format('woff');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+//@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic');

@@ -1,0 +1,109 @@
+.position {
+  margin-top: 50px;
+}
+
+.map {
+  max-width: 100%;
+  position: relative;
+}
+
+.schedule__content {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.schedule__wrapper {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.schedule {
+  background-color: $mainColor;
+  color: $white;
+  flex-basis: $oneElem;
+  height: 100%;
+  padding: 0 30px;
+  text-align: center;
+  opacity: 0.9;
+
+  p {
+    font-size: $fontSize-Xl;
+    padding: 0 10px;
+    line-height: 20px;
+    font-weight: $fontWeightLow;
+  }
+
+  h3 {
+    font-size: $fontSizeHeading;
+    line-height: $lineHeightHeading;
+    font-weight: $fontWeightLow;
+    margin-bottom: 5px;
+
+    span {
+      font-weight: $fontWeightBold;
+    }
+  }
+  .schedule__heading--italic {
+    font-style: italic;
+    line-height: 20px;
+    margin-top: 20px;
+    font-weight: $fontWeightBold;
+  }
+}
+
+
+.schedule__opening-hours {
+  @include flex-container;
+  border-bottom: 1px dashed $white;
+  padding: 10px 0;
+}
+.schedule__day svg {
+  margin-right: 5px;
+  width: 12px;
+  height: 12px;
+}
+@media (max-width:$maxWidth){
+ .schedule{
+   flex-basis: 50%;
+ }
+}
+@media (max-width:$minWidth){
+  .schedule{
+    h3{
+      line-height:40px;
+    }
+    p{
+      padding: 0;
+      font-size: $mainFontSize;
+    }
+  }
+
+}
+@media (max-width:640px){
+  .schedule{
+    flex-basis: 60%;
+    h3{
+      font-size:$fontSize_h2 ;
+    }
+  }
+  .schedule__weeks{
+    font-size: $fontSize-sm;
+  }
+}
+@media (max-width:$microWidth){
+  .schedule__opening-hours{
+    flex-direction: column;
+    padding: 5px 0;
+  }
+  .schedule{
+    p{
+      font-size: $fontSize-sm;
+    }
+    h3{
+      line-height: $lineHeightP;
+    }
+  }
+}

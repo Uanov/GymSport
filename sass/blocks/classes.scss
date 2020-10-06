@@ -1,0 +1,128 @@
+.classes-membership{
+  @include flex-container
+}
+.heading {
+  color: $mainColor;
+  text-transform: uppercase;
+  font-weight: $fontWeightLow;
+  font-size: $fontSizeHeading;
+  text-align: center;
+  line-height: $lineHeightHeading;
+  padding: 25px 0;
+}
+
+.classes {
+  flex-basis: $twoElem;
+}
+
+.classes__all-classes {
+  @include flex-container;
+  background: $mainColor;
+}
+.classes-sprite__list{
+  @include flex-container;
+}
+.prompt{
+  display: none;
+  position: absolute;
+  background-color: $white;
+  color: $mainDark;
+  width:100px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px;
+  top:-35px;
+  left: -8px;
+  border-radius: 2px;
+  font-size: $fontSize-sm;
+}
+.classes__footnote{
+  @include footnote;
+  top: 16px;
+  left: 10px;
+}
+.classes-sprite__element{
+  margin-right: 15px;
+  position: relative;
+}
+
+.classes__timetable {
+  flex-basis: 48%;
+  padding: 0px 32px 18px;
+}
+
+.classes__class-type {
+  @include flex-container;
+  border-bottom: 1px dotted $white;
+  padding: 25px 0 12px;
+}
+
+.classes__name {
+  @include flex-container;
+  svg{
+    margin-right: 15px;
+  }
+  span {
+    font-size: $mainFontSize;
+    text-transform: uppercase;
+    color: $white;
+  }
+}
+
+.strip {
+  border-right: 1px solid #a9ddf1;
+  height: 180px;
+}
+@media (min-width:$minWidth){
+  .classes-sprite__element:hover .prompt{
+    display: block;
+  }
+}
+@media screen and (max-width: $maxWidth) {
+  .classes__timetable {
+    padding: 0 30px 0;
+  }
+  .classes__all-classes{
+    padding-bottom: 10px;
+  }
+  .classes{
+    flex-basis: 100%;
+  }
+  .membership{
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: $mdWidth) {
+  .classes__name {
+    span {
+      font-size: $mainFontSize;
+    }
+  }
+
+}
+
+@media (max-width:$minWidth){
+  .classes__timetable{
+    flex-basis: 100%;
+  }
+
+  .strip{
+    display: none;
+  }
+}
+@media (max-width:$microWidth){
+  .classes-sprite__element{
+    margin-right: 8px;
+
+  }
+  .classes__name svg{
+    margin-right: 3px;
+    width: 13px;
+    height: 13px;
+  }
+  .classes-sprite__link svg{
+    width: 13px;
+    height: 13px;
+  }
+}

@@ -1,0 +1,17 @@
+.gallery-partner__wrapper{
+  @include flex-container;
+  align-items: flex-start;
+}
+.partner{
+  flex-basis: $oneElem;
+}
+.partner__all{
+  @include flex-container;
+  justify-content: space-around;
+}
+.partner__logo{
+  svg{
+    width: 120px;
+    height: 100px;
+  }
+}

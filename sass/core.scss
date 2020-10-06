@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+*{
+  position: relative;
+  outline: none;
+} 
+ 
+*, *::before, *::after {
+	box-sizing:inherit;
+}
+
+html {
+	font-size: 14px;
+	color: $black;
+	box-sizing:border-box;
+}
+
+.content-box-component {
+	box-sizing: content-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $mainFont;
+	overflow-wrap: break-word;
+	word-break: break-word;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container__main {
+	@include min-max(320px, 100%, 0);
+	background-color: $conteiner_background;
+}
+
+.wrap {
+	@include min-max(320px, 1200px, 15px);
+}
+li{
+	list-style-type: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}

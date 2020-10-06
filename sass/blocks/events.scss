@@ -1,0 +1,65 @@
+.next-events{
+  flex-basis: $oneElem;
+}
+.events{
+  background-color: $mainColorLite;
+}
+.events__booking{
+  display: flex;
+  padding: 21px 30px;
+}
+.events__present{
+  flex-basis: 44%;
+}
+.events__horizontal-line{
+  border-bottom: 1px solid $gray;
+  width: 80%;
+  margin: 0 auto;
+}
+.events__img{
+  max-width: 120px;
+  img{
+    display: block;
+    max-width: 100%;
+  }
+}
+.events__description{
+  flex-basis: 50%;
+  text-align: center;
+  p{
+    font-size: $fontSize-s;
+    margin: 4px 0;
+  }
+  h5{
+    font-size: $fontSize-XXl;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: $fontWeightLow;
+  }
+}
+.events__date{
+  color: $white;
+  font-size: $fontSize-Xl;
+  text-transform: uppercase;
+}
+.events__hours{
+  color: $red;
+  font-weight: $fontWeightBold;
+}
+.events__booking-btn{
+  color: $red;
+  font-size: $fontSize-s;
+  font-weight: $fontWeightBold;
+  border: 1px solid $black;
+  text-transform: uppercase;
+  padding: 0 10px;
+  &:hover{
+    color: $white;
+    border-color: $white;
+  }
+}
+@media (max-width:$maxWidth){
+  .events__booking{
+    padding: 15px 30px;
+  }
+}

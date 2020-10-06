@@ -1,0 +1,35 @@
+.membership {
+  flex-basis: $oneElem;
+  text-align: center;
+  color: $white;
+}
+
+.memberships__discount {
+  background-color: $mainDark;
+  padding: 37px 10px;
+  h4 {
+    font-size: $fontSize-XXl;
+    text-transform: uppercase;
+    font-weight: $fontWeightLow;
+  }
+
+  p {
+    font-weight: $fontWeightLow;
+    font-size: $fontSize-Xl;
+    line-height: $lineHeightP;
+  }
+}
+.memberships__btn {
+  @include gymBtn();
+  display: inline-block;
+}
+@media (max-width:$maxWidth){
+  .membership{
+    flex-basis: 100%;
+  }
+}
+@media (max-width:$microWidth){
+  .memberships__discount{
+    padding: 15px 20px 20px 20px;
+  }
+}

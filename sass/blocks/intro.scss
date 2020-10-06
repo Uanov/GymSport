@@ -1,0 +1,54 @@
+.intro {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.intro__title {
+  text-align: center;
+  flex-basis: 37%;
+  max-height: 270px;
+  overflow: auto;
+
+  h1 {
+    font-size: $fontSize-big;
+    color: $darkGreyText;
+  }
+
+  p {
+    font-size: $fontSize-Xl;
+    line-height: 24px;
+    color: $greyText;
+  }
+}
+
+.intro__fon {
+  flex-basis: 20%;
+
+  img {
+    display: block;
+  }
+}
+
+@media screen and (max-width: $mdWidth) {
+  .intro__title {
+    flex-basis: 70%;
+  }
+}
+
+@media screen and (max-width: $minWidth) {
+  .intro {
+    flex-direction: column-reverse;
+  }
+  .intro__title {
+    h1 {
+      font-size: $fontSize_h2;
+    }
+
+    p {
+      font-size: $mainFontSize;
+      line-height: 20px;
+    }
+  }
+}

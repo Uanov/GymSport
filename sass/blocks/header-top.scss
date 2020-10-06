@@ -1,0 +1,55 @@
+.header__header-top {
+  background-color: $secondColor;
+  padding: 12px 0;
+}
+
+.header__contacts {
+  @include flex-container;
+}
+
+.header__phone {
+  a {
+    @include flex-container;
+    color: $white;
+    font-size: $fontSize-sm;
+    svg{
+      margin-right: 15px;
+    }
+  }
+}
+
+.sprite {
+  @include flex-container;
+}
+
+.sprite >li{
+  margin-right: 15px;
+}
+.icons {
+  fill: $white;
+  width: 15px;
+  height: 15px;
+}
+@media screen and (max-width: $maxWidth) {
+  .wrap{
+    max-width: 970px;
+  }
+}
+@media screen and (max-width: $mdWidth) {
+  .wrap{
+    max-width:750px;
+  }
+
+}
+@media screen and (max-width: $minWidth) {
+  .header__header-top{
+    display: none;
+  }
+
+  .wrap{
+    max-width:none;
+  }
+  .sprite >li {
+    margin-right: 10px;
+  }
+}

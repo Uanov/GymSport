@@ -1,0 +1,35 @@
+.from-the-blog{
+  flex-basis: $oneElem;
+}
+.blog{
+  background-color: $gray;
+  padding: 10px 5px 10px 15px;
+}
+.blog__post{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  p{
+    margin: 2px 0;
+    color: $white;
+    font-size: $fontSize-sm;
+    line-height: 18px;
+  }
+  span{
+    font-size: $fontSize-sm;
+    color: $greyText;
+  }
+}
+.blog__foto{
+  max-width: 70px;
+  max-height: 70px;
+  border-radius: 10%;
+  overflow: hidden;
+  img{
+    display: block;
+    max-width: 100%;
+  }
+}
+.blog__text{
+  padding: 0 10px;
+}

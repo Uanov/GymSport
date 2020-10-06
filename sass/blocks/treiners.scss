@@ -1,0 +1,7 @@
+.treiners-events-blog__wrapper{
+  @include flex-container;
+  align-items: flex-start;
+}
+.treiners{
+  flex-basis: $oneElem;
+}
