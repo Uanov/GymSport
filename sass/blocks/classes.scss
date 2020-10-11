@@ -1,6 +1,7 @@
-.classes-membership{
+.classes-membership {
   @include flex-container
 }
+
 .heading {
   color: $mainColor;
   text-transform: uppercase;
@@ -19,36 +20,43 @@
   @include flex-container;
   background: $mainColor;
 }
-.classes-sprite__list{
+
+.classes-sprite__list {
   @include flex-container;
 }
-.prompt{
+
+.prompt {
   display: none;
   position: absolute;
   background-color: $white;
   color: $mainDark;
-  width:100px;
+  width: 100px;
   text-align: center;
   text-transform: uppercase;
   padding: 5px;
-  top:-35px;
+  top: -35px;
   left: -8px;
   border-radius: 2px;
   font-size: $fontSize-sm;
 }
-.classes__footnote{
+
+.classes__footnote {
   @include footnote;
   top: 16px;
   left: 10px;
 }
-.classes-sprite__element{
-  margin-right: 15px;
+
+.classes-sprite__element {
   position: relative;
 }
 
 .classes__timetable {
   flex-basis: 48%;
   padding: 0px 32px 18px;
+
+  svg {
+    margin-right: 15px;
+  }
 }
 
 .classes__class-type {
@@ -59,9 +67,7 @@
 
 .classes__name {
   @include flex-container;
-  svg{
-    margin-right: 15px;
-  }
+
   span {
     font-size: $mainFontSize;
     text-transform: uppercase;
@@ -73,56 +79,81 @@
   border-right: 1px solid #a9ddf1;
   height: 180px;
 }
-@media (min-width:$minWidth){
-  .classes-sprite__element:hover .prompt{
+
+@media (min-width: $minWidth) {
+  .classes-sprite__element:hover .prompt {
     display: block;
   }
 }
+
 @media screen and (max-width: $maxWidth) {
   .classes__timetable {
-    padding: 0 30px 0;
+    padding: 0 15px;
   }
-  .classes__all-classes{
+  .classes__all-classes {
     padding-bottom: 10px;
-  }
-  .classes{
-    flex-basis: 100%;
-  }
-  .membership{
-    flex-basis: 100%;
   }
 }
 
 @media screen and (max-width: $mdWidth) {
+  .classes__timetable {
+    svg {
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+    }
+  }
   .classes__name {
     span {
+      font-size: $fontSize-s;
+    }
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+  .heading {
+    font-size: $lineHeightP;
+  }
+  .classes__class-type {
+    padding: 20px 0 12px;
+  }
+}
+
+@media (max-width: $minWidth) {
+  .classes {
+    flex-basis: 100%;
+  }
+  .classes__timetable {
+    flex-basis: 100%;
+    padding: 0 40px;
+
+    svg {
+      width: 15px;
+      height: 15px;
+      margin-right: 15px;
+    }
+
+    .classes__name span {
       font-size: $mainFontSize;
     }
   }
 
-}
-
-@media (max-width:$minWidth){
-  .classes__timetable{
-    flex-basis: 100%;
-  }
-
-  .strip{
+  .strip {
     display: none;
   }
 }
-@media (max-width:$microWidth){
-  .classes-sprite__element{
-    margin-right: 8px;
 
+@media (max-width: $microWidth) {
+  .classes__timetable {
+    padding: 0 20px;
+    svg {
+      width: 12px;
+      height: 12px;
+      margin-right: 10px;
+    }
   }
-  .classes__name svg{
-    margin-right: 3px;
-    width: 13px;
-    height: 13px;
-  }
-  .classes-sprite__link svg{
-    width: 13px;
-    height: 13px;
+  .classes__class-type {
+    padding: 12px 0;
   }
 }

@@ -1,5 +1,9 @@
+.events-blog__wrapper{
+  @include flex-container;
+  flex-basis: $twoElem;
+}
 .next-events{
-  flex-basis: $oneElem;
+  flex-basis: 48.5%;
 }
 .events{
   background-color: $mainColorLite;
@@ -63,3 +67,29 @@
     padding: 15px 30px;
   }
 }
+@media (max-width:$mdWidth){
+  .events__date{
+    font-size: $mainFontSize;
+  }
+  .events__booking{
+    padding: 15px;
+  }
+  .events__present{
+    flex-basis: 50%;
+  }
+  .events__description h5{
+    font-size: $mainFontSize;
+  }
+}
+@media (max-width:$minWidth){
+  .trainers-events-blog__wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width:$microWidth){
+  .events-blog__wrapper{
+    flex-direction: column;
+  }
+}
+

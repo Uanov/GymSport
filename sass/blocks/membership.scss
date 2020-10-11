@@ -21,9 +21,22 @@
 }
 .memberships__btn {
   @include gymBtn();
-  display: inline-block;
 }
 @media (max-width:$maxWidth){
+  .memberships__discount{
+    padding: 10px;
+  }
+}
+@media (max-width:$mdWidth){
+  .memberships__discount h4{
+    font-size: $fontSize-Xl;
+    margin: 10px;
+  }
+  .memberships__discount p{
+    font-size: $mainFontSize;
+  }
+}
+@media (max-width:$minWidth){
   .membership{
     flex-basis: 100%;
   }
@@ -31,5 +44,8 @@
 @media (max-width:$microWidth){
   .memberships__discount{
     padding: 15px 20px 20px 20px;
+  }
+  .memberships__btn{
+    padding: 5px 25px;
   }
 }

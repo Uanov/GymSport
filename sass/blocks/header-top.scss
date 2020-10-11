@@ -29,6 +29,9 @@
   fill: $white;
   width: 15px;
   height: 15px;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 @media screen and (max-width: $maxWidth) {
   .wrap{

@@ -132,4 +132,10 @@
   .footer__nav{
     margin: 0 10px;
   }
+  .footer__bottom-wrapper{
+    flex-direction: column;
+    span{
+      margin-bottom: 10px;
+    }
+  }
 }

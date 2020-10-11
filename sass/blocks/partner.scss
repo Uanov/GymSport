@@ -15,3 +15,35 @@
     height: 100px;
   }
 }
+@media (max-width:$mdWidth){
+  .partner__logo {
+    svg {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+@media (max-width:$minWidth){
+  .partner{
+    flex-basis: 100%;
+  }
+  .partner__list{
+    @include flex-container;
+    justify-content: space-around;
+    flex-basis: 100%;
+  }
+  .partner__logo {
+    svg {
+      width: 120px;
+      height: 100px;
+    }
+  }
+}
+@media (max-width:$microWidth){
+  .partner__logo {
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}

@@ -71,7 +71,7 @@
 
   .menu__list--active > li {
     padding: 18px;
-    font-size: $fontSize_h2;
+    font-size: $fontSize-XXl;
   }
 
   .sub-menu__list--active {
@@ -82,6 +82,7 @@
   }
   .sub-menu__list--active li{
     padding: 5px;
+    font-size: $fontSize-Xl;
   }
 }
 

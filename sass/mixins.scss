@@ -125,6 +125,7 @@
   }
 }
 @mixin gymBtn($br:3px, $fs:14px, $cl:$white){
+  display: inline-block;
   border:1px solid $white;
   border-radius: $br;
   font-size: $fs;

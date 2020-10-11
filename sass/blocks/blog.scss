@@ -1,5 +1,5 @@
 .from-the-blog{
-  flex-basis: $oneElem;
+  flex-basis: 48.5%;
 }
 .blog{
   background-color: $gray;
@@ -32,4 +32,12 @@
 }
 .blog__text{
   padding: 0 10px;
+}
+@media (max-width:$mdWidth){
+  .blog__post {
+    padding: 6px;
+    p {
+      font-size: $fontSize-s;
+    }
+  }
 }
