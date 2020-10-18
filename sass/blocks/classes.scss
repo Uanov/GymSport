@@ -8,7 +8,7 @@
   font-weight: $fontWeightLow;
   font-size: $fontSizeHeading;
   text-align: center;
-  line-height: $lineHeightHeading;
+  line-height: $HeightHeading;
   padding: 25px 0;
 }
 
@@ -52,7 +52,7 @@
 
 .classes__timetable {
   flex-basis: 48%;
-  padding: 0px 32px 18px;
+  padding: 0 32px 18px;
 
   svg {
     margin-right: 15px;
@@ -113,7 +113,7 @@
     }
   }
   .heading {
-    font-size: $lineHeightP;
+    font-size: $HeightP;
   }
   .classes__class-type {
     padding: 20px 0 12px;

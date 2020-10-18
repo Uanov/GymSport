@@ -38,7 +38,7 @@
 
   h3 {
     font-size: $fontSizeHeading;
-    line-height: $lineHeightHeading;
+    line-height: $HeightHeading;
     font-weight: $fontWeightLow;
     margin-bottom: 5px;
 
@@ -104,7 +104,7 @@
       font-size: $fontSize-sm;
     }
     h3{
-      line-height: $lineHeightP;
+      line-height: $HeightP;
     }
   }
 }

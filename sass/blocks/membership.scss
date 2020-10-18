@@ -16,10 +16,10 @@
   p {
     font-weight: $fontWeightLow;
     font-size: $fontSize-Xl;
-    line-height: $lineHeightP;
+    line-height: $HeightP;
   }
 }
-.memberships__btn {
+.more__btn {
   @include gymBtn();
 }
 @media (max-width:$maxWidth){
@@ -40,12 +40,13 @@
   .membership{
     flex-basis: 100%;
   }
+  .more__btn{
+    padding: 5px 15px;
+  }
 }
 @media (max-width:$microWidth){
   .memberships__discount{
     padding: 15px 20px 20px 20px;
   }
-  .memberships__btn{
-    padding: 5px 25px;
-  }
+
 }

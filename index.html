@@ -9,6 +9,36 @@
 <body>
 <div class="container__main">
     <header class="header">
+        <div class="header-slider">
+            <div class="header-slider__item">
+                <img src="img/slide1.jpg" alt="Первый слайд">
+            </div>
+            <div class="header-slider__item">
+                <img src="img/slide2.jpg" alt="Второй слайд">
+            </div>
+            <div class="header-slider__item">
+                <img src="img/slide3.jpg" alt="Третий слайд">
+            </div>
+            <a id="header-slider__btn-next" class="header-slider__btn-next">
+                <div class="header-slider__arrow">
+                    <svg class="header-slider__arrow-down">
+                        <use xlink:href="/img/symbol/sprite.svg#right-arrow"></use>
+                    </svg>
+                </div>
+            </a>
+            <div class="header-slider-info__wrapper">
+                <div class="wrap">
+                    <div class="header-slider-info">
+                        <h2 class="header-slider-info__title">PERFECT Fitness PSD </h2>
+                        <h4 class="header-slider-info__subtitle">best choise for your site</h4>
+                        <p class="header-slider-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Animi aut corporis et expedita id ipsum iusto laborum nihil nobis omnis perspiciatis quos,
+                            sapiente? Nulla, saepe!</p>
+                        <a href="#" class="more__btn">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="header__header-top">
             <div class="header__contacts wrap">
                 <div class="header__phone">
@@ -535,7 +565,7 @@
                 <div class="memberships__discount">
                     <h4>25% discount for all members</h4>
                     <p>Discount on services and treatments at the GymBase for all membership cards holders.</p>
-                    <a href="#" class="memberships__btn">more</a>
+                    <a href="#" class="more__btn">more</a>
                 </div>
             </div>
         </div>
@@ -756,7 +786,8 @@
                     <h3 class="footer__heading">NEWSLETTER SIGNUP</h3>
                     <p class="footer__email-text">Sign up for our newsletter <br> and get the latest news.</p>
                     <form action="#" method="post">
-                        <p><input type="email" name="user-mail" class="footer__email-input" maxlength="18" placeholder="INSERT EMAIL">
+                        <p><input type="email" name="user-mail" class="footer__email-input" maxlength="18"
+                                  placeholder="INSERT EMAIL">
                         </p>
                         <p class="footer__email-btn-sbmt"><input type="submit" value="SUBMIT EMAIL">
                             <svg class="footer__arrow footer__arrow--inside">

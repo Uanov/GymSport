@@ -1,0 +1,55 @@
+.header-slider {
+  max-width: 100%;
+  position: relative;
+}
+
+.header-slider__item img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+.header-slider__item {
+  position: absolute;
+  top: -150vh;
+  max-height: 95vh;
+  overflow: hidden;
+}
+
+.header-slider__item--active {
+  position: relative;
+  top: 0;
+  transition: 2.5s cubic-bezier(.08, .82, .17, 1);
+}
+//Стили кнопки
+.header-slider__arrow{
+  opacity: 0.5;
+}
+.header-slider__btn-next {
+  cursor: pointer;
+  position: absolute;
+  padding: 10px 0;
+  transition: 0.6s ease;
+  bottom: -20px;
+  right: 50%;
+  transform: rotate(90deg);
+  border-radius: 3px;
+}
+
+.header-slider__btn-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.header-slider__arrow-down{
+  width: 5vw;
+  height: 5vw;
+  fill: $mainDark;
+}
+@media (max-width:$mdWidth){
+  .header-slider__btn-next{
+    bottom:-15px;
+  }
+}
+@media (max-width:$microWidth){
+  .header-slider{
+    display: none;
+  }
+}
