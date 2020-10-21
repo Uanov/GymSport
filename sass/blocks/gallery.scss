@@ -1,9 +1,0 @@
-.gallery{
-  flex-basis: $twoElem;
-}
-
-@media (max-width:$minWidth){
-  .gallery{
-    flex-basis: 100%;
-  }
-}

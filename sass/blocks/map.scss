@@ -1,4 +1,4 @@
-.position {
+.location {
   margin-top: 50px;
 }
 
@@ -6,11 +6,13 @@
   max-width: 100%;
   position: relative;
 }
+.map__box{
+  z-index: 1;
+}
 
 .schedule__content {
   position: absolute;
   top: 0;
-  z-index: 1;
   width: 100%;
   height: 100%;
 }
@@ -28,6 +30,7 @@
   padding: 0 30px;
   text-align: center;
   opacity: 0.9;
+  z-index: 2;
 
   p {
     font-size: $fontSize-Xl;
