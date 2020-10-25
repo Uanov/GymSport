@@ -2,6 +2,9 @@
   max-width: 100%;
   position: relative;
 }
+.header-slider--hidden{
+  display: none;
+}
 
 .header-slider__item img {
   display: block;
@@ -30,7 +33,7 @@
   padding: 10px 0;
   transition: 0.6s ease;
   bottom: -20px;
-  right: 50%;
+  right: calc(50% - 5vw/2);
   transform: rotate(90deg);
   border-radius: 3px;
 }

@@ -28,6 +28,7 @@
   }
 }
 @media (max-width:$mdWidth){
+
   .memberships__discount h4{
     font-size: $fontSize-Xl;
     margin: 10px;
@@ -37,6 +38,9 @@
   }
 }
 @media (max-width:$minWidth){
+  .memberships__discount{
+    padding: 20px;
+  }
   .membership{
     flex-basis: 100%;
   }

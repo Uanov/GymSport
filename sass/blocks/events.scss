@@ -1,95 +1,189 @@
-.events-blog__wrapper{
+.events-blog__wrapper {
   @include flex-container;
   flex-basis: $twoElem;
+  align-items: flex-start;
 }
-.next-events{
+
+.next-events {
   flex-basis: 48.5%;
 }
-.events{
+
+.events {
   background-color: $mainColorLite;
 }
-.events__booking{
+
+.events__booking {
   display: flex;
-  padding: 21px 30px;
+  align-items: center;
+  padding: 19px 30px 18px;
 }
-.events__present{
+
+.events__present {
   flex-basis: 44%;
 }
-.events__horizontal-line{
+
+.events__horizontal-line {
   border-bottom: 1px solid $gray;
   width: 80%;
   margin: 0 auto;
 }
-.events__img{
-  max-width: 120px;
-  img{
+
+.events__img {
+
+  img {
     display: block;
-    max-width: 100%;
+    width: 120px;
+    border-radius: 5px;
   }
 }
-.events__description{
+
+.events__description {
   flex-basis: 50%;
   text-align: center;
-  p{
+
+  p {
     font-size: $fontSize-s;
     margin: 4px 0;
   }
-  h5{
+
+  h5 {
     font-size: $fontSize-XXl;
     text-transform: uppercase;
     margin: 0;
     font-weight: $fontWeightLow;
   }
 }
-.events__date{
+
+.events__date {
   color: $white;
   font-size: $fontSize-Xl;
   text-transform: uppercase;
 }
-.events__hours{
+
+.events__hours {
   color: $red;
   font-weight: $fontWeightBold;
 }
-.events__booking-btn{
+
+.events__booking-btn {
   color: $red;
   font-size: $fontSize-s;
   font-weight: $fontWeightBold;
   border: 1px solid $black;
   text-transform: uppercase;
   padding: 0 10px;
-  &:hover{
+
+  &:hover {
     color: $white;
     border-color: $white;
   }
 }
-@media (max-width:$maxWidth){
-  .events__booking{
-    padding: 15px 30px;
+
+@media (max-width: $maxWidth) {
+  .events__booking {
+    padding: 12px 20px;
+  }
+  .events__description {
+    padding-left: 10px;
   }
 }
-@media (max-width:$mdWidth){
-  .events__date{
+
+@media (max-width: $mdWidth) {
+  .events-blog__wrapper {
+    flex-basis: 100%;
+  }
+  .events__date {
     font-size: $mainFontSize;
   }
-  .events__booking{
+  .events__booking {
     padding: 15px;
   }
-  .events__present{
+  .events__present {
     flex-basis: 50%;
   }
-  .events__description h5{
+  .events__description h5 {
     font-size: $mainFontSize;
   }
 }
-@media (max-width:$minWidth){
-  .trainers-events-blog__wrapper{
+
+@media (max-width: $mdWidth) {
+  .events__img {
+    img {
+      width: 140px;
+    }
+  }
+}
+
+@media (max-width: $minWidth) {
+  .trainers-events-blog__wrapper {
     flex-direction: column;
     align-items: center;
   }
+
 }
-@media (max-width:$microWidth){
-  .events-blog__wrapper{
+@media (max-width:650px){
+  .events__img {
+    img {
+      width: 115px;
+    }
+  }
+}
+@media (max-width:600px){
+  .events__booking {
+    padding: 15px 30px;
+  }
+  .next-events {
+    flex-basis: 100%;
+  }
+  .events__img {
+    img {
+      width: 80%;
+    }
+  }
+  .events__description {
+    p {
+      font-size: 2.2vw;
+    }
+
+    h5 {
+      font-size: 3.2vw;
+    }
+  }
+  .events__text{
+    line-height: 1.3;
+  }
+  .events__booking-btn{
+    font-size: 2vw;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+  }
+
+}
+
+@media (max-width: $microWidth) {
+  .events-blog__wrapper {
     flex-direction: column;
+  }
+  .events__description {
+    p {
+      font-size: 2.8vw;
+    }
+
+    h5 {
+      font-size: 3.8vw;
+    }
+  }
+  .events__img {
+    img {
+      width: 90%;
+    }
+  }
+  .events__date{
+    font-size: $fontSize-XXl;
+  }
+  .events__booking {
+    padding: 15px;
   }
 }
 

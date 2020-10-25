@@ -89,6 +89,10 @@
 @media screen and (max-width: $maxWidth) {
   .classes__timetable {
     padding: 0 15px;
+
+    svg {
+      margin-right: 10px;
+    }
   }
   .classes__all-classes {
     padding-bottom: 10px;
@@ -100,12 +104,12 @@
     svg {
       width: 10px;
       height: 10px;
-      margin-right: 10px;
+      margin-right: 7px;
     }
   }
   .classes__name {
     span {
-      font-size: $fontSize-s;
+      font-size: 12px;
     }
 
     svg {
@@ -125,28 +129,29 @@
     flex-basis: 100%;
   }
   .classes__timetable {
-    flex-basis: 100%;
-    padding: 0 40px;
+    flex-basis: 49%;
+    padding: 0 20px;
 
     svg {
-      width: 15px;
-      height: 15px;
-      margin-right: 15px;
-    }
-
-    .classes__name span {
-      font-size: $mainFontSize;
+      margin-right: 10px;
     }
   }
+}
 
-  .strip {
-    display: none;
+@media (max-width: 570px) {
+
+  .classes__timetable {
+    svg {
+      margin-right: 5px;
+    }
   }
 }
 
 @media (max-width: $microWidth) {
   .classes__timetable {
     padding: 0 20px;
+    flex-basis: 100%;
+
     svg {
       width: 12px;
       height: 12px;
@@ -155,5 +160,17 @@
   }
   .classes__class-type {
     padding: 12px 0;
+  }
+  .strip {
+    display: none;
+  }
+  .classes__name {
+    span {
+      font-size: $fontSize-sm;
+    }
+
+    svg {
+      margin-right: 5px;
+    }
   }
 }
