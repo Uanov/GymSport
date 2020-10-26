@@ -1,7 +1,10 @@
 .location {
   margin-top: 50px;
 }
-
+.map__size{
+  width: 100%;
+  height: 500px;
+}
 .map {
   max-width: 100%;
   position: relative;
@@ -86,28 +89,35 @@
 
 }
 @media (max-width:640px){
+  .map__size{
+    height: 400px;
+  }
+  .schedule__content {
+    position: relative;
+    margin-top: 50px;
+  }
   .schedule{
-    flex-basis: 60%;
+    flex-basis: 100%;
+    padding: 15px 50px;
     h3{
-      font-size:$fontSize_h2 ;
+      font-size:28px ;
+      line-height: 0;
+      margin-bottom: 15px;
     }
   }
   .schedule__weeks{
-    font-size: $fontSize-sm;
+    font-size: $fontSize-Xl;
   }
 }
 @media (max-width:$microWidth){
-  .schedule__opening-hours{
-    flex-direction: column;
-    padding: 5px 0;
-  }
   .schedule{
-    padding: 0 20px;
-    p{
-      font-size: $fontSize-sm;
-    }
+    padding: 10px 25px;
     h3{
-      line-height: $HeightP;
+      font-size:$fontSize_h2 ;
+      margin-bottom: 10px;
     }
+  }
+  .schedule__weeks{
+    font-size: $mainFontSize;
   }
 }
