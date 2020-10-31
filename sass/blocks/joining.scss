@@ -1,0 +1,117 @@
+.joining-background{
+  width: 100%;
+  background: $mainColor;
+}
+.joining{
+  @include flex-container;
+  align-items: flex-start;
+  margin-top:80px;
+  text-align: center;
+  padding: 28px 0 28px;
+}
+.joining__border{
+  height: 170px;
+  border-right: 1px solid $white;
+  opacity: 0.5;
+}
+.joining-new,.joining-already{
+  flex-basis: 49%;
+  padding: 0 50px;
+}
+.joining-already{
+  color: $black;
+}
+.joining__heading{
+  font-size:$fontSizeHeading;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+}
+.joining__subheading{
+  font-size: $fontSize_h2;
+  line-height: $HeightHeading;
+}
+.joining__text{
+  line-height: 21px;
+  font-weight: $fontWeightLow;
+}
+
+.joining__btn-today,.joining__btn-log-in,.joining__btn-calendar{
+  text-transform: uppercase;
+  color: $white;
+  border-radius: 5px;
+  font-size: 12px;
+  display: inline-block;
+  margin: 15px;
+  white-space: nowrap;
+  &:hover{
+    box-shadow: 0 0 8px 0 #000000;
+  }
+}
+.joining__btn-today{
+  background-color: $red;
+  padding: 14px 20%;
+  &:hover{
+    background-color: $white;
+    color: $mainColor;
+    transition: 0.4s;
+  }
+}
+.joining__btn-log-in{
+  background-color: $white;
+  color: $mainColor;
+  padding: 14px 9%;
+  &:hover{
+    background-color: $red;
+    color: $white;
+  }
+}
+.joining__btn-calendar{
+ background-color: #a1eef7;
+  padding: 14px 3%;
+  &:hover{
+    background-color: $red;
+  }
+}
+@media (max-width:$mdWidth){
+  .joining-new,.joining-already{
+    padding: 0 15px;
+  }
+}
+@media (max-width:$minWidth){
+  .joining{
+    flex-direction: column;
+    align-items: center;
+  }
+  .joining-new,.joining-already{
+    flex-basis: 100%;
+    padding: 0 50px;
+  }
+  .joining__border{
+    height: 2px;
+    border: none;
+    width: 80%;
+    background-color: $white;
+    opacity: 0.5;
+    margin: 20px 0;
+  }
+}
+@media (max-width:$microWidth){
+  .joining__heading{
+    font-size:$fontSize-h2;
+  }
+  .joining__subheading{
+    font-size: $fontSize-XXl;
+    line-height: $HeightP;
+  }
+  .joining__text{
+    line-height: 18px;
+    font-size: $fontSize-sm;
+  }
+  .joining-new,.joining-already{
+    padding: 0 30px;
+  }
+  .joining__btn-today,.joining__btn-log-in,.joining__btn-calendar{
+    margin: 5px;
+  }
+}
