@@ -2,6 +2,10 @@
   @include flex-container;
   align-items: flex-start;
 }
+.gallery-partner__fon{
+  width: 100%;
+  background-color: $gray;
+}
 .partner{
   flex-basis: $oneElem;
 }

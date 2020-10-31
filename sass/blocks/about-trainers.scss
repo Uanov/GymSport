@@ -1,0 +1,154 @@
+.about-trainers {
+  @include flex-container;
+}
+
+.trainers-card {
+  @include flex-container;
+  flex-basis: $oneElem;
+  flex-wrap: nowrap;
+  background-color: $white;
+  padding: 28px 0;
+  margin-bottom: 25px;
+  color: $mainColor;
+}
+
+.trainers-card__border {
+  height: 180px;
+  border-right: 1px solid $mainDark;
+}
+
+.trainers-person-card {
+  text-align: center;
+  flex-basis: 47%;
+  padding: 0 6%;
+}
+
+.trainers-person-card__foto {
+  object-fit: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.trainers-card__name, .trainers-card__direction {
+  text-transform: uppercase;
+}
+
+.trainers-card__name, {
+  font-weight: $fontWeightBold;
+}
+
+.trainers-card__direction {
+  font-style: italic;
+  font-size: $mainFontSize;
+}
+
+.trainers-card__description {
+  font-size: $fontSize-s;
+  color: $darkGreyText;
+  line-height: 1.2;
+  font-style: italic;
+}
+
+.trainers-card__social-networks {
+  @include flex-container;
+}
+
+.trainers-card__icons {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  margin: 0 2px;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.trainers-card__social-networks--left {
+  fill: $greyText;
+}
+
+.trainers-card__social-networks--right {
+  fill: $mainColor;
+}
+
+
+.trainers-person-card-qualifications {
+  font-size: $fontSize-s;
+  flex-basis: 52%;
+  padding: 0 20px;
+}
+
+.trainers-person-card-qualifications__heading {
+  text-transform: uppercase;
+  font-weight: $fontWeightBold;
+  margin: 12px 0;
+}
+
+.trainers-person-card-qualifications__text {
+  line-height: 14px;
+  margin: 0;
+}
+
+.trainers-card--blue {
+  background-color: $mainColor;
+  color: $white;
+}
+
+.trainers-card__description--blue {
+  color: $white;
+}
+
+.trainers-card__border--blue {
+  border-color: $white;
+  opacity: 0.5;
+}
+
+.trainers-card__social-networks--blue {
+  svg {
+    fill: $white;
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: $maxWidth) {
+  .trainers-card {
+    flex-basis: 48.5%;
+  }
+}
+
+@media (max-width: $minWidth) {
+  .trainers-card {
+    flex-basis: 85%;
+  }
+  .about-trainers{
+    justify-content: center;
+  }
+}
+@media (max-width: $microWidth) {
+  .trainers-card {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .trainers-card{
+    padding: 15px 0;
+  }
+  .trainers-person-card-qualifications{
+    padding: 0 10px;
+  }
+  .trainers-person-card {
+    padding: 0 6%;
+  }
+  .trainers-person-card-qualifications__text {
+    line-height: 12px;
+  }
+  .trainers-person-card-qualifications__heading {
+    margin: 8px 0;
+  }
+  .trainers-card__icons {
+    width: 13px;
+    height: 13px;
+  }
+}
