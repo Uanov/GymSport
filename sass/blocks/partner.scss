@@ -2,9 +2,11 @@
   @include flex-container;
   align-items: flex-start;
 }
-.gallery-partner__fon{
+.gallery-partner__background{
   width: 100%;
-  background-color: $gray;
+  background-color: #e6e6e6;
+  margin-bottom: 110px;
+  padding: 10px 0 75px;
 }
 .partner{
   flex-basis: $oneElem;
