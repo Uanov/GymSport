@@ -1,0 +1,47 @@
+.pricing-feedback-bc{
+  width: 100%;
+  background-color:$greyBackground;
+  padding: 60px 0;
+  margin-bottom: 100px;
+}
+.pricing-feedback{
+ @include flex-container;
+}
+.pricing-feedback__question{
+  color: $mainDark;
+}
+.pricing-feedback__heading{
+ font-size: $fontSizeHeading;
+  margin: 8px 0;
+}
+.pricing-feedback__text{
+  font-size: 16px;
+  margin: 8px 0;
+  line-height: 22px;
+}
+.pricing-feedback__phone-btn{
+  cursor: pointer;
+  font-size: 20px;
+  display: inline-block;
+  padding: 13px 2.5%;
+  background-color: $red;
+  border-radius: 5px;
+  margin: 10px 0;
+  &:hover {
+    background-color: $mainColor;
+    color: $white;
+    box-shadow: 0 0 8px 0 #000000;
+    transition: 0.3s;
+  }
+}
+@media (max-width:$minWidth){
+  .pricing-feedback-bc{
+    padding: 40px 0;
+  }
+  .pricing-feedback{
+    flex-direction: column;
+  }
+  .pricing-feedback__question{
+    text-align: center;
+  }
+}

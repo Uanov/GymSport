@@ -1,0 +1,96 @@
+.pricing-plans-section {
+  margin: 50px 0 100px;
+}
+
+.pricing-plans {
+  @include flex-container;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.price-item {
+  text-align: center;
+  background-color: $mainColor;
+  flex-basis: 23%;
+  padding: 8px 0 15px;
+  margin: 10px;
+}
+
+
+.price-item__tariff {
+  font-size: 36px;
+  font-weight: $fontWeightBold;
+  margin: 10px 0;
+  sup{
+    font-size: $mainFontSize;
+    top: -24px;
+  }
+}
+
+.price-item__list {
+  font-size: 12px;
+  padding: 0;
+  margin-bottom: 15px;
+
+  li {
+    margin: 8px 0;
+    color: $white;
+  }
+}
+
+.price-item__link {
+  color: $white;
+}
+
+.price-item__btn {
+  @include gymBtn();
+  padding: 10px 13%;
+}
+.price-item--dark{
+  background-color: $mainDark;
+}
+.price-item--white{
+  background-color: $white;
+  color: $mainColor;
+  .price-item__link{
+    color: $mainColor;
+  }
+  .price-item__btn{
+    color: $mainColor;
+    border-color: $mainColor;
+    &:hover{
+      background-color: $mainColor;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: $mdWidth) {
+  .pricing-plans {
+    flex-wrap: wrap;
+  }
+  .price-item {
+    flex-basis: 47%;
+  }
+}
+
+@media (max-width: $minWidth) {
+
+  .price-item {
+    flex-basis: 45%;
+  }
+  .pricing-plans {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: $microWidth) {
+  .price-item {
+    flex-basis: 70%;
+  }
+}
+@media (max-width: 360px) {
+  .price-item {
+    flex-basis: 100%;
+  }
+}

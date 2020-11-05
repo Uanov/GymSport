@@ -1,3 +1,6 @@
+.live-cameras-section{
+  margin-bottom: $sectionSpace;
+}
 .cameras-content{
   @include flex-container;
 }
@@ -46,7 +49,9 @@
     font-size: $mainFontSize;
     font-weight: $fontWeightBold;
   }
-
+  .live-cameras-section{
+    margin-bottom:$sectionSpaceAdaptive;
+  }
 }
 @media (max-width:$microWidth){
   .cameras-content{

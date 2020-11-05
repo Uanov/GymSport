@@ -1,3 +1,6 @@
+.classes-work-section{
+  margin-bottom: $sectionSpace;
+}
 .classes-membership {
   @include flex-container
 }
@@ -135,6 +138,9 @@
     svg {
       margin-right: 10px;
     }
+  }
+  .classes-work-section{
+    margin-bottom: $sectionSpaceAdaptive;
   }
 }
 

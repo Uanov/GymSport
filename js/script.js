@@ -1,5 +1,5 @@
-let page = document.location.pathname
-if (page === '/index.html' || page !== '/about.html') {
+let currentPage = document.location.pathname
+if (currentPage === '/index.html' || currentPage === '/' ) {
     document.querySelector('.burger-menu-wrapper').onclick = function () {
         document.querySelector('.burger-menu').classList.toggle('burger-menu--active');
         document.querySelector('.menu__list').classList.toggle('menu__list--active');
@@ -185,7 +185,7 @@ if (page === '/index.html' || page !== '/about.html') {
     }
 }
 
-if (page === '/about.html') {
+if (currentPage === '/about.html' || currentPage === '/pricing.html') {
     document.querySelector('.burger-menu-wrapper').onclick = function () {
         document.querySelector('.burger-menu').classList.toggle('burger-menu--active');
         document.querySelector('.menu__list').classList.toggle('menu__list--active');

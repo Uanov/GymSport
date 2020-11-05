@@ -1,3 +1,10 @@
+.gallery-partner-section{
+  margin-bottom: $sectionSpace;
+}
+.about-gallery-partner-section{
+  margin-bottom: 110px;
+}
+
 .gallery-partner__wrapper{
   @include flex-container;
   align-items: flex-start;
@@ -5,7 +12,6 @@
 .gallery-partner__background{
   width: 100%;
   background-color: #e6e6e6;
-  margin-bottom: 110px;
   padding: 10px 0 75px;
 }
 .partner{

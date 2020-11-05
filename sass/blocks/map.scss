@@ -1,5 +1,5 @@
-.location {
-  margin-top: 50px;
+.location-section{
+  margin-top: 100px;
 }
 .map__size{
   width: 100%;
@@ -86,7 +86,9 @@
       font-size: $mainFontSize;
     }
   }
-
+  .location-section{
+    margin-top: 0;
+  }
 }
 @media (max-width:640px){
   .map__size{

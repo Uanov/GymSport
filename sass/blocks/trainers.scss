@@ -1,3 +1,6 @@
+.trainers-events-blog-section{
+  margin-bottom: $sectionSpace;
+}
 .trainers-events-blog__wrapper {
   @include flex-container;
   align-items: flex-start;
@@ -195,6 +198,9 @@
   .slider-trainers__description{
     font-size: 2.2vw;
   }
+  .trainers-events-blog-section{
+    margin-bottom: $sectionSpaceAdaptive;
+  }
 }
 @media (max-width:$microWidth){
   .slider-trainers__item img {
@@ -218,4 +224,5 @@
     width: 25px;
     height: 25px;
   }
+
 }

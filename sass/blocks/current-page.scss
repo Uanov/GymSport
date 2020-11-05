@@ -1,0 +1,34 @@
+.current-page__background{
+  border-bottom: 10px solid $mainDark;
+}
+.current-page__background-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.current-page__label {
+  position: absolute;
+  bottom: 0;
+  text-transform: uppercase;
+  font-size: $fontSizeHeading;
+  background-color: $mainDark;
+  font-weight: $fontWeightLow;
+  padding: 8px 28px;
+}
+
+@media (max-width: $mdWidth) {
+  .current-page__background-img {
+    height: 250px;
+  }
+}
+
+@media (max-width: $minWidth) {
+  .current-page__background-img {
+    height: 200px;
+  }
+  .current-page__label {
+    font-size: $fontSize_h2;
+  }
+}
