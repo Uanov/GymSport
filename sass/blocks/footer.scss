@@ -35,11 +35,16 @@
   border: 0.5px solid $secondColor;
   padding: 10px 15px;
   background-color: #b9e8fa;
+  color:$darkGreyText;
 
   &::placeholder {
     color: $secondColor;
     font-size: $fontSize-Xl;
     font-weight: $fontWeightBold;
+  }
+  &:focus{
+    background-color:$white;
+    color:$black;
   }
 }
 

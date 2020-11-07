@@ -1,0 +1,105 @@
+.contacts-feedback-section{
+  margin-bottom: $sectionSpaceX2;
+}
+.contacts-feedback-bc{
+  width: 100%;
+  background-color: $mainDark;
+}
+.contacts-feedback{
+  @include flex-container;
+  align-items: flex-start;
+  padding: 50px 15px 60px;
+}
+.contacts-feedback-form__text-wrapper{
+  @include flex-container;
+  flex-basis: 100%;
+  flex-wrap: nowrap;
+}
+.contacts-feedback-form__textarea-wrapper{
+  @include flex-container;
+  flex-basis: 100%;
+  align-items: flex-start;
+}
+
+.contacts-send-message{
+  flex-basis: 56%;
+}
+.contacts-info{
+  flex-basis: $oneElem;
+}
+.contacts-feedback-form{
+  @include flex-container;
+}
+.contacts-feedback-form__text, .contacts-feedback-form__textarea{
+  flex-basis: $oneElem;
+  margin: 8px 0;
+  padding: 10px;
+  width: 100%;
+  background-color:$mainColorLite;
+  border: none;
+  color:$darkGreyText;
+  &::placeholder{
+    font-size: $fontSize-s;
+  }
+  &:focus{
+    background-color:$white;
+    color:$black;
+  }
+}
+.contacts-feedback-form__textarea{
+  flex-basis: $twoElem;
+}
+.contacts-feedback-form__submit{
+  flex-basis: $oneElem;
+  margin: 8px 0;
+}
+.contacts-feedback-form__btn-submit{
+  background-color: #e25050;
+  border: none;
+  color: $white;
+  font-size: $fontSize-Xl;
+  padding: 10px 15% 10px 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $red;
+    box-shadow: 0 0 8px 0 #000000;
+    transition: 0.3s;
+  }
+}
+
+.contacts-info__heading, .contacts-send-message__heading{
+  text-transform: uppercase;
+  font-weight: $fontWeightLow;
+}
+.contacts-feedback-form__submit, .contacts-info__text, .contacts-info__phone-email{
+  font-size: 12px;
+  line-height: 21px;
+}
+.contacts-info__icons{
+  fill: white;
+  width: 15px;
+  height: 10px;
+}
+@media (max-width:$minWidth){
+  .contacts-send-message, .contacts-info{
+    flex-basis: 100%;
+
+  }
+  .contacts-feedback-form__submit{
+    flex-basis: 66%;
+  }
+}
+@media (max-width:$microWidth){
+  .contacts-feedback-form__text-wrapper{
+    flex-wrap: wrap;
+  }
+  .contacts-feedback-form__text{
+    flex-basis: 70%;
+  }
+  .contacts-feedback{
+    padding: 30px 15px 40px;
+  }
+
+}
+

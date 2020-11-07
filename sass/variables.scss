@@ -1,20 +1,19 @@
+$mainFont: 'Open Sans', sans-serif;
+$conteiner_background:#f3f3f3;
+
 $black: #000;
 $white: #fff;
 $red:#fe0000;
+$gray:#d4d6d6;
 
-$mainFont: 'Open Sans', sans-serif;
-$conteiner_background:#f3f3f3;
 $mainColor: #72d0f4;
 $secondColor: #00bff0;
-$mainColorLite:#8ad3ee;
+$mainColorLite:#a5e5fe;
 $mainDark:#00bff0;
-
-
 
 $darkGreyText:#505961;
 $greyText:#a7acb0;
 
-$gray:#d4d6d6;
 $greyBackground:#e6e6e6;
 
 $fontSize-s:11px;
@@ -26,11 +25,8 @@ $fontSize_h2:24px;
 $fontSizeHeading:30px;
 $fontSize-big:38px;
 
-
-
 $fontWeightLow:300;
 $fontWeightBold:600;
-
 
 $HeightHeading:48px;
 $HeightP:24px;
@@ -44,4 +40,5 @@ $oneElem:32%;
 $twoElem:66%;
 
 $sectionSpace:50px;
+$sectionSpaceX2:100px;
 $sectionSpaceAdaptive:0;

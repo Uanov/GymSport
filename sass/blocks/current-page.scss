@@ -16,6 +16,7 @@
   background-color: $mainDark;
   font-weight: $fontWeightLow;
   padding: 8px 28px;
+  z-index: 1;
 }
 
 @media (max-width: $mdWidth) {
