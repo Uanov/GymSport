@@ -1,8 +1,16 @@
 .classes-work-section{
   margin-bottom: $sectionSpace;
 }
+.pricing-classes-events-section{
+  margin-bottom: 100px;
+}
 .classes-membership {
-  @include flex-container
+  @include flex-container;
+  align-items: flex-start;
+}
+.classes-events-wrapper{
+  @include flex-container;
+  align-items: flex-start;
 }
 
 .heading {
@@ -55,7 +63,7 @@
 
 .classes__timetable {
   flex-basis: 48%;
-  padding: 0 32px 18px;
+  padding: 0 32px 27px;
 
   svg {
     margin-right: 15px;
@@ -91,7 +99,7 @@
 
 @media screen and (max-width: $maxWidth) {
   .classes__timetable {
-    padding: 0 15px;
+    padding: 7px 15px;
 
     svg {
       margin-right: 10px;
