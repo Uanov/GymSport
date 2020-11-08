@@ -87,3 +87,28 @@
     }
   }
 }
+//Style for page CLASSES class='classes-from-the-blog'
+@media (max-width:$mdWidth) and (min-width: $minWidth){
+  .classes-from-the-blog{
+    flex-basis: $oneElem;
+    .blog__post p{
+      line-height:11px;
+    }
+    .blog__foto img{
+      max-width: 95%;
+    }
+  }
+}
+@media (max-width:$minWidth) and (min-width: 600px){
+  .classes-from-the-blog{
+    flex-basis: 90%;
+    .blog__post p{
+      font-size: $fontSize-XXl;
+      line-height: 24px;
+    }
+    .blog__foto{
+      max-width: 80px;
+      max-height: 80px;
+    }
+  }
+}

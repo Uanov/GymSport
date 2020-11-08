@@ -185,7 +185,7 @@ if (currentPage === '/index.html' || currentPage === '/' ) {
     }
 }
 
-if (currentPage === '/about.html' || currentPage === '/pricing.html' || currentPage === '/contacts.html') {
+if (currentPage === '/about.html' || currentPage === '/pricing.html' || currentPage === '/contacts.html'|| currentPage === '/classes.html') {
     document.querySelector('.burger-menu-wrapper').onclick = function () {
         document.querySelector('.burger-menu').classList.toggle('burger-menu--active');
         document.querySelector('.menu__list').classList.toggle('menu__list--active');

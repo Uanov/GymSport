@@ -2,7 +2,10 @@
   margin-bottom: $sectionSpace;
 }
 .pricing-classes-events-section{
-  margin-bottom: 100px;
+  margin-bottom: $sectionSpaceX2;
+}
+.classes-blog-section{
+  margin-bottom: $sectionSpaceX2;
 }
 .classes-membership {
   @include flex-container;
