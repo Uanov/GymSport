@@ -68,3 +68,22 @@
     span{font-size: 3.6vw;}
   }
 }
+//Style for page CONTACTS class='contacts-from-the-blog'
+@media (min-width:$minWidth){
+  .contacts-from-the-blog{
+    flex-basis: 48.5%;
+    .heading{
+      padding-top: 0;
+    }
+  }
+}
+@media (max-width:$mdWidth) and (min-width:$minWidth) {
+  .contacts-from-the-blog{
+    .heading{
+      padding: 0;
+    }
+    .blog__post p{
+      line-height: 16px;
+    }
+  }
+}

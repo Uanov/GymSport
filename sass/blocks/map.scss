@@ -30,7 +30,7 @@
   color: $white;
   flex-basis: $oneElem;
   height: 100%;
-  padding: 0 30px;
+  padding: 25px 30px;
   text-align: center;
   opacity: 0.9;
   z-index: 2;
@@ -46,7 +46,7 @@
     font-size: $fontSizeHeading;
     line-height: $HeightHeading;
     font-weight: $fontWeightLow;
-    margin-bottom: 5px;
+    margin: 5px;
 
     span {
       font-weight: $fontWeightBold;
@@ -63,7 +63,7 @@
 
 .schedule__opening-hours {
   @include flex-container;
-  border-bottom: 1px dashed $white;
+  border-bottom: 2px solid #e1e1e187;
   padding: 10px 0;
 }
 .schedule__day svg {
@@ -121,5 +121,20 @@
   }
   .schedule__weeks{
     font-size: $mainFontSize;
+  }
+}
+//Style for page CONTACTS contacts-schedule'
+.contacts-schedule{
+  flex-basis: $oneElem;
+}
+@media (min-width:$minWidth){
+  .contacts-schedule{
+    min-height: 500px;
+  }
+}
+
+@media (max-width: $mdWidth){
+  .contacts-schedule{
+    flex-basis: 40%;
   }
 }

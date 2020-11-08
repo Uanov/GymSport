@@ -172,7 +172,7 @@
     padding: 15px;
   }
 }
-//Style for next-events-prices
+//Style for page PRICES class='next-events-prices'
 @media (max-width:$mdWidth) and (min-width: $minWidth){
   .next-events-prices{
     flex-basis: 31.5%;
@@ -212,5 +212,23 @@
   .classes-events-wrapper{
     justify-content: center;
   }
-
+}
+//Style for page CONTACTS class='contacts-next-events'
+@media (min-width:$minWidth){
+  .contacts-next-events{
+    flex-basis: 48.5%;
+    .heading{
+      padding-top: 0;
+    }
+  }
+}
+@media (max-width:$mdWidth) and (min-width:$minWidth){
+  .contacts-next-events{
+    .heading{
+      padding: 0;
+    }
+    .events__img img{
+      width: 100%;
+    }
+  }
 }
