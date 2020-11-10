@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: $microWidth) {
+@media (max-width: $mobileScreenWidth) {
   .price-item {
     flex-basis: 70%;
   }

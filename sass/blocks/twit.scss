@@ -7,12 +7,12 @@
 .twit__icon{
   width: 70px;
   height: 70px;
-  fill:$secondColor;
+  fill:$mainDark;
   margin-right: 20px;
 }
 .twit__text{
-  color: $secondColor;
-  line-height:$HeightP ;
+  color: $mainDark;
+  line-height:$lineHeightText ;
   span{
     color: #1060a9;
   }
@@ -29,7 +29,7 @@
     padding: 50px 15px;
   }
 }
-@media (max-width:$microWidth){
+@media (max-width:$mobileScreenWidth){
   .twit__text {
    font-size: $fontSize-sm;
     line-height: 22px;

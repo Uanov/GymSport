@@ -15,6 +15,7 @@
   position: relative;
   margin: auto;
   @include flex-container;
+  align-items: flex-start;
   background: $white;
 }
 
@@ -202,7 +203,7 @@
     margin-bottom: $sectionSpaceAdaptive;
   }
 }
-@media (max-width:$microWidth){
+@media (max-width:$mobileScreenWidth){
   .slider-trainers__item img {
     width: 70px;
     height: 70px;

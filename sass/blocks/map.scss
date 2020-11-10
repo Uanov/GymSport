@@ -44,10 +44,10 @@
 
   h3 {
     font-size: $fontSizeHeading;
-    line-height: $HeightHeading;
-    font-weight: $fontWeightLow;
+    line-height: $lineHeightHeading;
     margin: 5px;
-
+    font-family:$mainFontLight;
+    font-weight: $fontWeightLow;
     span {
       font-weight: $fontWeightBold;
     }
@@ -111,7 +111,7 @@
     font-size: $fontSize-Xl;
   }
 }
-@media (max-width:$microWidth){
+@media (max-width:$mobileScreenWidth){
   .schedule{
     padding: 10px 25px;
     h3{

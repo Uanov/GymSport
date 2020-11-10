@@ -36,7 +36,7 @@
 }
 .contacts-join__subheading{
   font-size: $fontSize-XXl;
-  line-height: $HeightHeading;
+  line-height: $lineHeightHeading;
   display: inline-block;
 }
 .contacts-join__text{
@@ -55,8 +55,8 @@
   &:hover{
     background-color: $white;
     color: $mainColor;
-    box-shadow: 0 0 8px 0 #000000;
-    transition: 0.3s;
+    box-shadow: $btn-shadow;
+    transition: $btn-transition;
   }
 }
 @media (max-width:$mdWidth){
@@ -90,7 +90,7 @@
     margin-bottom: $sectionSpace;
   }
 }
-@media (max-width:$microWidth){
+@media (max-width:$mobileScreenWidth){
   .contacts-join__subheading{
     line-height: 21px;
   }

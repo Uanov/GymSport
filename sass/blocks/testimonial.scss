@@ -17,7 +17,7 @@
   margin: 50px 0;
   font-style: italic;
   font-size: $fontSize-XXl;
-  font-weight: $fontWeightLow;
+  font-family: $mainFontLight;
   color: #696d70;
   line-height: 30px;
 }
@@ -31,7 +31,7 @@
     color: $mainColor;
   }
 }
-@media (max-width:$microWidth){
+@media (max-width:$mobileScreenWidth){
   .testimonial{
     padding: 50px 15px;
   }

@@ -13,13 +13,7 @@
   border: 1px solid transparent;
 }
 .footnote {
-  padding: 5px;
-  background-color: $white;
-  position: absolute;
-  z-index: 0;
-  transform: rotate(45deg);
-  top: -4px;
-  left: 15px;
+ @include footnote;
 }
 
 @media (max-width: $minWidth) {

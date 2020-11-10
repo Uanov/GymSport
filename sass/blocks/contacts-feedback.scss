@@ -63,12 +63,13 @@
 
   &:hover {
     background-color: $red;
-    box-shadow: 0 0 8px 0 #000000;
-    transition: 0.3s;
+    box-shadow: $btn-shadow;
+    transition: $btn-transition;
   }
 }
 
 .contacts-info__heading, .contacts-send-message__heading{
+  font-family: $mainFontLight;
   text-transform: uppercase;
   font-weight: $fontWeightLow;
 }
@@ -90,7 +91,7 @@
     flex-basis: 66%;
   }
 }
-@media (max-width:$microWidth){
+@media (max-width:$mobileScreenWidth){
   .contacts-feedback-form__text-wrapper{
     flex-wrap: wrap;
   }

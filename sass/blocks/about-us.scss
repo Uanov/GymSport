@@ -22,13 +22,14 @@
 
 .about-us__heading{
   font-size: 38px;
-  font-weight: $fontWeightLow;
+  font-family: $mainFontLight;
   margin: 12px 0;
+  font-weight: $fontWeightLow;
 }
 .about-us__text{
   font-size: $fontSize-Xl;
-  line-height: $HeightP;
-  font-weight: $fontWeightLow;
+  line-height: $lineHeightText;
+  font-family: $mainFontLight;
 }
 .about-us__responsible-name{
   font-weight: $fontWeightBold;

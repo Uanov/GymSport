@@ -15,21 +15,22 @@
 }
 
 .header-slider-info__title {
-  font-size: $HeightHeading;
+  font-family: $mainFontCondensed;
+  font-size: $lineHeightHeading;
   text-transform: uppercase;
   margin: 0;
   font-weight: $fontWeightLow;
-  letter-spacing: -2px;
 }
 
 .header-slider-info__subtitle {
   margin: 10px 0;
   font-weight: $fontWeightLow;
-  font-size: $HeightP;
+  font-size: $lineHeightText;
   text-transform: uppercase;
 }
 
 .header-slider-info__text {
+  font-family: $mainFontLight;
   font-weight: $fontWeightLow;
   margin: 15px 0;
   line-height: 1.3;

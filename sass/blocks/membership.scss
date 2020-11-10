@@ -16,9 +16,9 @@
 
   p {
     padding: 0 50px;
-    font-weight: $fontWeightLow;
+   font-family: $mainFontLight;
     font-size: $fontSize-Xl;
-    line-height: $HeightP;
+    line-height: $lineHeightText;
   }
 }
 
@@ -63,7 +63,7 @@
   }
 }
 
-@media (max-width: $microWidth) {
+@media (max-width: $mobileScreenWidth) {
   .memberships__discount {
     padding: 15px 20px 20px 20px;
   }

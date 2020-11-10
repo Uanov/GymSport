@@ -17,12 +17,12 @@
 }
 
 .heading {
+  font-family: $mainFontCondensed;
   color: $mainColor;
   text-transform: uppercase;
-  font-weight: $fontWeightLow;
   font-size: $fontSizeHeading;
   text-align: center;
-  line-height: $HeightHeading;
+  line-height: $lineHeightHeading;
   padding: 25px 0;
 }
 
@@ -52,6 +52,7 @@
   left: -8px;
   border-radius: 2px;
   font-size: $fontSize-sm;
+  z-index: 9;
 }
 
 .classes__footnote {
@@ -65,7 +66,7 @@
 }
 
 .classes__timetable {
-  flex-basis: 48%;
+  flex-basis: $halfFlex;
   padding: 0 32px 27px;
 
   svg {
@@ -94,10 +95,8 @@
   height: 180px;
 }
 
-@media (min-width: $minWidth) {
-  .classes-sprite__element:hover .prompt {
-    display: block;
-  }
+.classes-sprite__element:hover .prompt {
+  display: block;
 }
 
 @media screen and (max-width: $maxWidth) {
@@ -131,7 +130,7 @@
     }
   }
   .heading {
-    font-size: $HeightP;
+    font-size: $lineHeightText;
   }
   .classes__class-type {
     padding: 20px 0 12px;
@@ -164,7 +163,7 @@
   }
 }
 
-@media (max-width: $microWidth) {
+@media (max-width: $mobileScreenWidth) {
   .classes__timetable {
     padding: 0 20px;
     flex-basis: 100%;

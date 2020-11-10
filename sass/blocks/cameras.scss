@@ -5,7 +5,7 @@
   @include flex-container;
 }
 .cameras{
-  border-bottom: 4px solid $secondColor;
+  border-bottom: 4px solid $mainDark;
   flex-basis: $oneElem;
 }
 .cameras__video img{
@@ -53,7 +53,7 @@
     margin-bottom:$sectionSpaceAdaptive;
   }
 }
-@media (max-width:$microWidth){
+@media (max-width:$mobileScreenWidth){
   .cameras-content{
     justify-content: center;
     flex-direction: column;

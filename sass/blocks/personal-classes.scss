@@ -7,7 +7,7 @@
 }
 
 .personal-classes-item {
-  flex-basis: 48.5%;
+  flex-basis: $halfFlex;
   display: flex;
   margin: 15px 0;
 }
@@ -25,6 +25,7 @@
 }
 
 .personal-classes-item-info__heading {
+  font-family: $mainFontLight;
   font-size: 24px;
   font-weight: 300;
   text-align: center;
@@ -60,19 +61,20 @@
 
 .personal-classes-item-info-trainer__position {
   text-transform: uppercase;
+  font-family:$mainFontBold;
   font-size: $fontSize-s;
-  font-weight: $fontWeightBold;
 }
 
 .personal-classes-item-info-trainer__name {
   text-transform: uppercase;
+  font-family:$mainFontBold;
   font-weight: $fontWeightBold;
   margin: 5px 0;
 }
 
 .personal-classes-item-info-trainer__text {
   font-size: 12px;
-  font-style: italic;
+  font-family: $mainFontItalic;
 }
 
 .personal-classes-item-info__btn-wrapper {
@@ -90,8 +92,8 @@
   margin: 10px 0;
   &:hover{
     background-color: $red;
-    box-shadow: 0 0 8px 0 #000000;
-    transition: 0.3s;
+    box-shadow: $btn-shadow;
+    transition: $btn-transition;
   }
 }
 .personal-classes-item-info--white{
@@ -169,7 +171,7 @@
     padding: 0 15px;
   }
 }
-@media (max-width:$microWidth){
+@media (max-width:$mobileScreenWidth){
  .personal-classes-item-background{
    display: none;
  }

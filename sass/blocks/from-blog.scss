@@ -20,7 +20,7 @@
     color: $greyText;
   }
 }
-.blog__foto{
+.blog__photo{
   max-width: 70px;
   max-height: 70px;
   border-radius: 10%;
@@ -35,7 +35,7 @@
 }
 @media (max-width:$mdWidth){
   .from-the-blog{
-    flex-basis: 48.5%;
+    flex-basis: $halfFlex;
   }
   .blog__post {
     padding: 6px;
@@ -45,7 +45,7 @@
   }
 }
 @media (max-width:600px){
-  .blog__foto{
+  .blog__photo{
     max-width: 80px;
     max-height: 80px;
   }
@@ -58,8 +58,8 @@
   }
 
 }
-@media (max-width:$microWidth){
-  .blog__foto{
+@media (max-width:$mobileScreenWidth){
+  .blog__photo{
     max-width: 70px;
     max-height: 70px;
   }
@@ -71,7 +71,7 @@
 //Style for page CONTACTS class='contacts-from-the-blog'
 @media (min-width:$minWidth){
   .contacts-from-the-blog{
-    flex-basis: 48.5%;
+    flex-basis: $halfFlex;
     .heading{
       padding-top: 0;
     }
@@ -94,7 +94,7 @@
     .blog__post p{
       line-height:11px;
     }
-    .blog__foto img{
+    .blog__photo img{
       max-width: 95%;
     }
   }
@@ -106,7 +106,7 @@
       font-size: $fontSize-XXl;
       line-height: 24px;
     }
-    .blog__foto{
+    .blog__photo{
       max-width: 80px;
       max-height: 80px;
     }

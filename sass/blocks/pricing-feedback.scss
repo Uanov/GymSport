@@ -30,8 +30,8 @@
   &:hover {
     background-color: $mainColor;
     color: $white;
-    box-shadow: 0 0 8px 0 #000000;
-    transition: 0.3s;
+    box-shadow: $btn-shadow;
+    transition: $btn-transition;
   }
 }
 @media (max-width:$minWidth){

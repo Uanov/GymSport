@@ -14,9 +14,9 @@
   text-transform: uppercase;
   font-size: $fontSizeHeading;
   background-color: $mainDark;
-  font-weight: $fontWeightLow;
+  font-family: $mainFontLight;
   padding: 8px 28px;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (max-width: $mdWidth) {

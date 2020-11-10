@@ -36,7 +36,7 @@ a {
 
 .container__main {
 	@include min-max(320px, 100%, 0);
-	background-color: $conteiner_background;
+	background-color: $container_background;
 }
 
 .wrap {

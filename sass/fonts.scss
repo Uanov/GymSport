@@ -1,10 +1,39 @@
 //Вариант подключения шрифтов
 @font-face {
-   font-family: 'open-sans';
+   font-family: 'Open Sans';
    src: url('/fonts/opensans-regular-webfont.woff') format('woff2'),
    url('/fonts/opensans-regular-webfont.woff2') format('woff');
    font-weight: normal;
    font-style: normal;
  }
+@font-face {
+   font-family: 'Open Sans - light';
+   src: url('/fonts/opensans-light-webfont.woff') format('woff2'),
+   url('/fonts/opensans-light-webfont.woff2') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Open Sans - bold';
+   src: url('/fonts/opensans-bold-webfont.woff') format('woff2'),
+   url('/fonts/opensans-bold-webfont.woff2') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Open Sans - italic';
+   src: url('/fonts/opensans-italic-webfont.woff') format('woff2'),
+   url('/fonts/opensans-italic-webfont.woff2') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Open Sans - condensed';
+   src: url('/fonts/opensanscondensed-light-webfont.woff') format('woff2'),
+   url('/fonts/opensanscondensed-light-webfont.woff2') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');

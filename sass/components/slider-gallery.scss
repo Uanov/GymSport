@@ -100,7 +100,7 @@
     height: 150px;
   }
 }
-@media (max-width:$microWidth){
+@media (max-width:$mobileScreenWidth){
   .slider-gallery__item img{
     height: 120px;
   }

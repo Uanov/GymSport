@@ -84,7 +84,7 @@
 
 @media (max-width: $mdWidth) {
   .next-events {
-    flex-basis: 48.5%;
+    flex-basis: $halfFlex;
   }
   .events__date {
     font-size: $mainFontSize;
@@ -150,7 +150,7 @@
 
 }
 
-@media (max-width: $microWidth) {
+@media (max-width: $mobileScreenWidth) {
   .events__description {
     p {
       font-size: 2.8vw;
@@ -216,7 +216,7 @@
 //Style for page CONTACTS class='contacts-next-events'
 @media (min-width:$minWidth){
   .contacts-next-events{
-    flex-basis: 48.5%;
+    flex-basis: $halfFlex;
     .heading{
       padding-top: 0;
     }

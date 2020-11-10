@@ -10,7 +10,7 @@
   flex-basis: 37%;
   max-height: 270px;
   overflow: auto;
-
+  font-family: $mainFontLight;
   h1 {
     font-size: $fontSize-big;
     color: $darkGreyText;
@@ -23,7 +23,7 @@
   }
 }
 
-.intro__fon {
+.intro__background {
   flex-basis: 20%;
 
   img {

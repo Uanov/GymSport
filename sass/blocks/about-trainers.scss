@@ -26,7 +26,7 @@
   padding: 0 6%;
 }
 
-.trainers-person-card__foto {
+.trainers-person-card__photo {
   object-fit: cover;
   width: 80px;
   height: 80px;
@@ -117,7 +117,7 @@
 
 @media (max-width: $maxWidth) {
   .trainers-card {
-    flex-basis: 48.5%;
+    flex-basis: $halfFlex;
   }
 }
 
@@ -129,7 +129,7 @@
     justify-content: center;
   }
 }
-@media (max-width: $microWidth) {
+@media (max-width: $mobileScreenWidth) {
   .trainers-card {
     flex-basis: 100%;
   }

@@ -1,3 +1,6 @@
+.classes-joining-section{
+  margin-bottom: $sectionSpaceX2;
+}
 .joining-background{
   width: 100%;
   background: $mainColor;
@@ -21,6 +24,7 @@
   color: $black;
 }
 .joining__heading{
+  font-family:$mainFontBold;
   font-size:$fontSizeHeading;
   text-transform: uppercase;
   font-style: italic;
@@ -28,9 +32,10 @@
 }
 .joining__subheading{
   font-size: $fontSize_h2;
-  line-height: $HeightHeading;
+  line-height: $lineHeightHeading;
 }
 .joining__text{
+  font-family: $mainFontLight;
   line-height: 21px;
   font-weight: $fontWeightLow;
 }
@@ -44,8 +49,8 @@
   margin: 15px;
   white-space: nowrap;
   &:hover{
-    box-shadow: 0 0 8px 0 #000000;
-    transition: 0.3s;
+    box-shadow: $btn-shadow;
+    transition: $btn-transition;
   }
 }
 .joining__btn-today{
@@ -96,13 +101,13 @@
     margin: 20px 0;
   }
 }
-@media (max-width:$microWidth){
+@media (max-width:$mobileScreenWidth){
   .joining__heading{
     font-size:$fontSize-h2;
   }
   .joining__subheading{
     font-size: $fontSize-XXl;
-    line-height: $HeightP;
+    line-height: $lineHeightText;
   }
   .joining__text{
     line-height: 18px;

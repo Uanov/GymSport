@@ -19,6 +19,7 @@
 }
 
 .footer__heading {
+  font-family: $mainFontBold;
   text-transform: uppercase;
   font-size: $fontSize-XXl;
   margin-bottom: 25px;
@@ -32,15 +33,15 @@
 
 .footer__email-input {
   width: 100%;
-  border: 0.5px solid $secondColor;
+  border: 0.5px solid $mainDark;
   padding: 10px 15px;
   background-color: #b9e8fa;
   color:$darkGreyText;
 
   &::placeholder {
-    color: $secondColor;
+    color: $mainDark;
     font-size: $fontSize-Xl;
-    font-weight: $fontWeightBold;
+    font-family: $mainFontBold;
   }
   &:focus{
     background-color:$white;
@@ -61,8 +62,8 @@
 
     &:hover {
       background-color: $red;
-      box-shadow: 0 0 8px 0 #000000;
-      transition: 0.3s;
+      box-shadow: $btn-shadow;
+      transition: $btn-transition;
     }
   }
 }
@@ -88,12 +89,13 @@
 
 .footer__about-us {
   .footer__about-us-text {
-    line-height: $HeightP;
+    line-height: $lineHeightText;
   }
 }
 
 .footer__contact {
   font-size: $fontSize-XXl;
+  font-family: $mainFontItalic;
 }
 
 .footer__nav-wrapper {
@@ -113,7 +115,7 @@
 }
 
 .footer__body-bottom {
-  background-color: $secondColor;
+  background-color: $mainDark;
 }
 
 .footer__bottom-wrapper {
@@ -122,7 +124,7 @@
 
   span {
     color: $white;
-    font-weight: $fontWeightBold;
+    font-family: "Open Sans - bold", sans-serif;
   }
 }
 
@@ -148,7 +150,7 @@
   }
 }
 
-@media (max-width: $microWidth) {
+@media (max-width: $mobileScreenWidth) {
   .footer__wrapper {
     flex-direction: column;
     align-items: center;
