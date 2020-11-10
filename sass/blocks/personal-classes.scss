@@ -1,0 +1,179 @@
+.personal-classes-section {
+  margin: $sectionSpace 0;
+}
+
+.personal-classes {
+  @include flex-container;
+}
+
+.personal-classes-item {
+  flex-basis: 48.5%;
+  display: flex;
+  margin: 15px 0;
+}
+
+.personal-classes-item-background__img {
+  min-width: 250px;
+  max-height: 250px;
+  display: block;
+  object-fit: cover;
+}
+
+.personal-classes-item-info {
+  background-color: $mainColor;
+  padding: 0 20px;
+}
+
+.personal-classes-item-info__heading {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.personal-classes-item-info__text {
+  font-size: $fontSize-s;
+  line-height: 14px;
+}
+
+.personal-classes-item-info-trainer {
+  display: flex;
+  padding: 10px 25px;
+}
+
+.personal-classes-item-info-trainer__photo {
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.personal-classes-item-info-trainer__img {
+  max-width: 100%;
+  display: block;
+}
+
+.personal-classes-item-info-trainer-wrapper {
+  margin-left: 10px;
+}
+
+.personal-classes-item-info-trainer__position {
+  text-transform: uppercase;
+  font-size: $fontSize-s;
+  font-weight: $fontWeightBold;
+}
+
+.personal-classes-item-info-trainer__name {
+  text-transform: uppercase;
+  font-weight: $fontWeightBold;
+  margin: 5px 0;
+}
+
+.personal-classes-item-info-trainer__text {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.personal-classes-item-info__btn-wrapper {
+  @include flex-container;
+  justify-content: space-around;
+}
+
+.personal-classes-item-info__btn {
+  color: $white;
+  font-size: $fontSize-s;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px solid $white;
+  border-radius: 3px;
+  margin: 10px 0;
+  &:hover{
+    background-color: $red;
+    box-shadow: 0 0 8px 0 #000000;
+    transition: 0.3s;
+  }
+}
+.personal-classes-item-info--white{
+  background-color: $white;
+  color: $mainColor;
+  .personal-classes-item-info__btn{
+    color: $mainColor;
+    border-color: $mainColor;
+    &:hover{
+      border-color: $white;
+      color: white;
+    }
+  }
+}
+
+@media (max-width: $maxWidth) and (min-width: $mdWidth) {
+  .personal-classes-item-background__img {
+    min-width: 215px;
+    max-height: 215px;
+  }
+  .personal-classes-item-info__heading {
+    font-size: 20px;
+    margin: 3px 0;
+  }
+  .personal-classes-item-info__text{
+    margin: 3px 0;
+    line-height: 12px;
+  }
+  .personal-classes-item-info-trainer {
+    padding: 5px 0;
+  }
+  .personal-classes-item-info-trainer__photo {
+    max-width: 70px;
+    max-height: 70px;
+  }
+}
+
+@media (max-width:$mdWidth){
+  .personal-classes-item {
+    flex-basis: 100%;
+    display: flex;
+    margin: 15px 0;
+  }
+  .personal-classes-item-info-trainer {
+    padding: 10px 15%;
+  }
+}
+@media (max-width:$minWidth){
+  .personal-classes-item-background__img {
+    min-width: 215px;
+    max-height: 215px;
+  }
+  .personal-classes-item-info__heading {
+    font-size: 20px;
+    margin: 3px 0;
+  }
+  .personal-classes-item-info__text{
+    margin: 3px 0;
+    line-height: 12px;
+  }
+  .personal-classes-item-info-trainer__photo {
+    max-width: 70px;
+    max-height: 70px;
+  }
+}
+@media (max-width:580px){
+  .personal-classes-item-background__img {
+    min-width: 195px;
+    max-height: 230px;
+  }
+  .personal-classes-item-info-trainer {
+    padding: 10px 3%;
+  }
+  .personal-classes-item-info {
+    padding: 0 15px;
+  }
+}
+@media (max-width:$microWidth){
+ .personal-classes-item-background{
+   display: none;
+ }
+  .personal-classes-item-info-trainer {
+    padding: 10px 10%;
+  }
+}
