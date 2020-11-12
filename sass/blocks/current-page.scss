@@ -33,3 +33,11 @@
     font-size: $fontSize_h2;
   }
 }
+@media (max-width: $mobileScreenWidth) {
+  .current-page__background-img {
+    height: 200px;
+  }
+  .current-page__label {
+    font-size: $fontSize-XXl;
+  }
+}

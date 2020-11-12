@@ -67,8 +67,6 @@
   color: $darkGreyText;
   line-height: 1.2;
 }
-
-
 /* Кнопки вперед и назад */
 .slider-trainers__btn--prev, .slider-trainers__btn--next {
   cursor: pointer;
@@ -78,19 +76,15 @@
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-
-
 .slider-trainers__btn--next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 .slider-trainers__right-arrows {
   width: 30px;
   height: 30px;
   fill: $mainColor;
 }
-
 .slider-trainers__right-arrows--left {
   transform: rotate(180deg);
 }
@@ -226,4 +220,39 @@
     height: 25px;
   }
 
+}
+//style for page "classes_pilates.html" class='slider-trainers__item--pilates'
+.slider-trainers__item--pilates{
+  padding: 15px;
+}
+@media (max-width:$mdWidth) {
+  .slider-trainers__item--pilates{
+    img{
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+@media (max-width:$minWidth){
+  .slider-trainers__item--pilates{
+    img{
+      width: 100px;
+      height: 100px;
+    }
+    .slider-trainers__description{
+      padding: 0 30%;
+    }
+
+  }
+}
+@media (max-width: 580px){
+  .slider-trainers__item--pilates{
+    .slider-trainers__name, .slider-trainers__direction{
+      font-size: 16px;
+    }
+    .slider-trainers__description{
+      font-size: 14px;
+      padding: 0 15%;
+    }
+  }
 }

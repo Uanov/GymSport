@@ -11,9 +11,16 @@
   color: $white;
   padding: 10px 15px;
   border: 1px solid transparent;
+  text-transform: uppercase;
 }
 .footnote {
  @include footnote;
+}
+.icons__arrow {
+  width: 10px;
+  height: 10px;
+  fill: $mainColor;
+  margin-right: 10px;
 }
 
 @media (max-width: $minWidth) {
@@ -29,11 +36,7 @@
   .footnote {
     display: none;
   }
-  .icons__arrow {
-    width: 14px;
-    height: 14px;
-    margin: 0;
-  }
+
   .sub-menu__link {
     color: $white;
   }
@@ -48,6 +51,9 @@
   }
   .menu--dropdown .header__menu-arrow > svg {
     transform: rotate(90deg);
+    width: 14px;
+    height: 14px;
+    margin: 0;
   }
   .menu--dropdown .header__menu-arrow--active > svg{
     transform: rotate(-90deg);
@@ -127,12 +133,7 @@
   .menu--dropdown:hover .sub-menu__list-wrapper {
     display: block;
   }
-  .icons__arrow {
-    width: 10px;
-    height: 10px;
-    fill: $mainColor;
-    margin-right: 10px;
-  }
+
   .header__menu-arrow > .icons__arrow {
     fill: $white;
   }

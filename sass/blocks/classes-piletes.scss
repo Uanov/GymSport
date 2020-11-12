@@ -1,0 +1,147 @@
+.classes-pilates-section{
+  margin: $sectionSpace 0 $sectionSpaceX2;
+}
+.classes-pilates{
+  @include flex-container;
+  align-items: flex-start;
+}
+.classes-pilates-about{
+  flex-basis: $twoElem;
+  background-color: $white;
+}
+.classes-pilates-opening-hours{
+  flex-basis: $oneElem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.classes-pilates-about__background{
+  width: 100%;
+}
+.classes-pilates-about__background-img{
+  width: 100%;
+  display: block;
+  height: 300px;
+  object-fit: cover;
+}
+
+.classes-pilates-about__text{
+  color: $darkGreyText;
+  line-height: 22px;
+  width: 95%;
+  margin: 25px auto;
+}
+.pilates-trainer-info{
+  @include flex-container;
+  align-items: flex-start;
+  width: 95%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.pilates-trainer-info__heading{
+  font-size: $fontSize-Xl;
+  color: $mainColor;
+  text-transform: uppercase;
+}
+.classes-pilates-featured, .classes-pilates-price{
+ flex-basis: 37%;
+  text-align: center;
+}
+
+.classes-pilates-featured__list, .classes-pilates-quotes__list{
+  border-left: 1px solid $mainColor;
+  padding: 10px 25px;
+  li{
+    margin: 18px 0;
+    &:last-child{
+      margin: 0;
+    }
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}
+.trainer-card{
+  text-align: center;
+  flex-basis: 26%;
+}
+.classes-pilates-featured__icon{
+  fill: $mainColor;
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+}
+.classes-pilates-featured__link{
+  color: $greyText;
+}
+.classes-pilates-quotes__list{
+  width: 100%;
+}
+.classes-pilates-quotes__link{
+  display: flex;
+  justify-content: space-between;
+}
+
+.classes-pilates-quotes__icon{
+ flex-basis: 5%;
+}
+.classes-pilates-quotes__period{
+  color: $greyText;
+  flex-basis: 65%;
+  text-align: left;
+}
+.classes-pilates-quotes__price{
+  background-color: $mainColor;
+  color: $white;
+  flex-basis: 30%;
+}
+@media (min-width:$mdWidth){
+  .classes-pilates-about,.classes-pilates-opening-hours{
+    min-height: 730px;
+  }
+
+}
+@media (max-width:$maxWidth){
+  .classes-pilates-featured__list, .classes-pilates-quotes__list{
+    padding:10px 15px;
+  }
+  .classes-pilates-about__background-img{
+    height: 280px;
+  }
+}
+@media (max-width:$mdWidth){
+  .classes-pilates-about,.classes-pilates-opening-hours{
+    flex-basis: 100%;
+  }
+  .classes-pilates-about{
+    margin-bottom: $sectionSpace;
+  }
+  .trainer-card{
+    flex-basis: 100%;
+  }
+  .classes-pilates-featured, .classes-pilates-price{
+    flex-basis: $halfFlex;
+  }
+  .classes-pilates-featured__list, .classes-pilates-quotes__list{
+    border: none;
+  }
+}
+@media (max-width: 580px){
+  .classes-pilates-featured__list, .classes-pilates-quotes__list{
+    padding: 10px 5px;
+  }
+  .classes-pilates-about__background-img{
+    height: 220px;
+  }
+}
+@media (max-width:$mobileScreenWidth){
+  .classes-pilates-featured, .classes-pilates-price{
+    flex-basis: 100%;
+  }
+  .classes-pilates-featured{
+    margin-bottom: $sectionSpace;
+  }
+  .classes-pilates-featured__list, .classes-pilates-quotes__list{
+    padding: 10px 15%;
+  }
+}
