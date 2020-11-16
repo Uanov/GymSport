@@ -1,6 +1,9 @@
 .blog-aside {
   flex-basis: $oneElem;
 }
+.slider-trainers--blog{
+  margin-top: 30px;
+}
 
 .blog-categories {
   width: 100%;
@@ -68,6 +71,25 @@
   .blog-categories__icon{
     width: 10px;
     height: 10px;
+  }
+}
+@media (max-width:$mdWidth){
+  .blog-categories{
+    padding: 10px 20px;
+  }
+  .schedule{
+    display: none;
+  }
+  .slider-trainers--blog{
+    display: none;
+  }
+}
+@media (max-width:$minWidth){
+ .blog-aside{
+   display: none;
+ }
+  .blog-posts{
+    flex-basis: 100%;
   }
 }
 

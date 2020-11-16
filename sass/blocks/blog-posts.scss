@@ -100,3 +100,26 @@
   background-color: $gray;
   margin: $sectionSpace 0;
 }
+@media (max-width:$maxWidth){
+  .post-item-panel__list{
+    flex-basis: 65%;
+  }
+}
+@media (max-width:$mdWidth){
+  .post-item-panel__info{
+    font-size:11px;
+    white-space: nowrap;
+  }
+  .post-item__img {
+    height: 200px;
+  }
+}
+@media (max-width:540px){
+  .post-item-panel{
+    flex-direction: column;
+  }
+  .post-item-panel__list{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

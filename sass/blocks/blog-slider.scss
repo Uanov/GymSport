@@ -2,7 +2,6 @@
 .blog-slider{
   max-width: 90%;
   position: relative;
-  height: 250px;
   margin: auto;
 }
 /* Картинка мастабируется по отношению к родительскому элементу */
@@ -88,5 +87,10 @@
   }
   to {
     opacity: 1
+  }
+}
+@media (max-width:$minWidth){
+  .blog-slider-item img {
+    height: 200px;
   }
 }
