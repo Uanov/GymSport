@@ -7,16 +7,16 @@
 @import "core";
 
 @import "blocks/header-top.scss";
-@import "blocks/header";
+@import "blocks/header.scss";
 @import "blocks/intro.scss";
 @import "blocks/cameras.scss";
-@import "blocks/home-classes";
+@import "blocks/home-classes.scss";
 @import "blocks/membership.scss";
 @import "blocks/twit.scss";
 @import "blocks/map.scss";
-@import "blocks/trainers";
+@import "blocks/trainers.scss";
 @import "blocks/events.scss";
-@import "blocks/from-blog";
+@import "blocks/from-blog.scss";
 @import "blocks/partner.scss";
 @import "blocks/footer.scss";
 @import "blocks/header-slider-info.scss";
@@ -39,4 +39,4 @@
 @import "components/burger-menu-btn.scss";
 @import "components/menu.scss";
 @import "components/header-slider.scss";
-@import "components/slider-gallery";
+@import "components/slider-gallery.scss";
